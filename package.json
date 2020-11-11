@@ -20,7 +20,7 @@
     "!**/__mocks__"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "jest ./src --verbose",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
@@ -46,9 +46,12 @@
     "@react-native-community/bob": "^0.16.2",
     "@react-native-community/eslint-config": "^2.0.0",
     "@release-it/conventional-changelog": "^1.1.4",
+    "@testing-library/jest-native": "^3.4.3",
+    "@testing-library/react-native": "^7.1.0",
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.62.13",
+    "@types/react-test-renderer": "^16.9.3",
     "commitlint": "^8.3.5",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -59,6 +62,8 @@
     "prettier": "^2.0.5",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-svg": "^12.1.0",
+    "react-test-renderer": "^17.0.1",
     "release-it": "^13.5.8",
     "typescript": "^3.8.3"
   },
@@ -71,6 +76,9 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
     ]
   },
   "husky": {
@@ -114,12 +122,16 @@
           "singleQuote": true,
           "tabWidth": 2,
           "trailingComma": "es5",
-          "useTabs": false
+          "useTabs": false,
+          "semi": false
         }
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -130,6 +142,11 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
-  }
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {}
 }
