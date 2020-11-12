@@ -34,7 +34,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/edwinwong90/react-native-icomoon",
+  "repository": "git://github.com/edwinwong90/react-native-icomoon.git",
   "author": "Edwin Wong <edwindeveloper90@gmail.com> (https://github.com/edwinwong90)",
   "license": "MIT",
   "bugs": {
@@ -148,5 +148,8 @@
       "typescript"
     ]
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
