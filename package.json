@@ -1,5 +1,5 @@
 {
-  "name": "react-native-icomoon",
+  "name": "@edwinwong90/react-native-icomoon",
   "version": "0.1.1",
   "description": "Icomoon icon compatible",
   "main": "lib/commonjs/index",
@@ -34,7 +34,9 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/edwinwong90/react-native-icomoon.git",
+  "repository": {
+    "url": "git://github.com/edwinwong90/react-native-icomoon.git"
+  },
   "author": "Edwin Wong <edwindeveloper90@gmail.com> (https://github.com/edwinwong90)",
   "license": "MIT",
   "bugs": {
@@ -150,6 +152,6 @@
   },
   "dependencies": {},
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/edwinwong90"
   }
 }
