@@ -1,5 +1,5 @@
 {
-  "name": "@edwinwong90/react-native-icomoon",
+  "name": "react-native-icomoon",
   "version": "0.1.1",
   "description": "Icomoon icon compatible",
   "main": "lib/commonjs/index",
