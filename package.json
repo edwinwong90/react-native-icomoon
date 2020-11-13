@@ -32,7 +32,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "icomoon",
+    "icon"
   ],
   "repository": {
     "url": "git://github.com/edwinwong90/react-native-icomoon.git"
