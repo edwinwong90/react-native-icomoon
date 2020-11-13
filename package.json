@@ -150,8 +150,5 @@
       "typescript"
     ]
   },
-  "dependencies": {},
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/edwinwong90"
-  }
+  "dependencies": {}
 }
